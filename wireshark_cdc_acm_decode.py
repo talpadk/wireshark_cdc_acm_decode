@@ -5,7 +5,11 @@ import json
 import sys
 import os
 if len(sys.argv)<2:
-  print("Usage: wireshark_cdc_acm_decoder.py path_to_json_file [compact|programming]")
+  print("Usage: python wireshark_cdc_acm_decoder.py path_to_json_file [compact|programming]")
+  print("* compact removes the ':' between the serial bytes thus making it easier")
+  print("  to paste into things like reveng (https://reveng.sourceforge.io/)")
+  print("* programming outputs the bytes as hex values separated by ','")
+  print("  for easy usage in most programming languages")
   os._exit(1)
 
 file = sys.argv[1]
