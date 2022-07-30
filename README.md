@@ -16,6 +16,10 @@ Usage: python wireshark_cdc_acm_decoder.py path_to_json_file [compact|programmin
   to paste into things like reveng (https://reveng.sourceforge.io/)
 * programming outputs the bytes as hex values separated by ','
   for easy usage in most programming languages
+* bin binary output both read and writes in one big blob, only data in binary mode
+* binr binary output only reads
+* binw binary output only writes
+* bintag binary output both read and writes the data is tagged with extra bytes to help id them
 ```
 
 # Example output
